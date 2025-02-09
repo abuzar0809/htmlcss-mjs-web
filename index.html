@@ -7,10 +7,26 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <style>
+        /* Default grid for large screens */
         .container {
             width: 100%;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        /* Responsive grid for medium screens */
+        @media (max-width: 1080px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Responsive grid for small screens */
+        @media (max-width: 600px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -19,19 +35,60 @@
     <nav>
         <div class="nav-wrapper">
             <a href="#" class="brand-logo">Movies</a>
+        </div>
     </nav>
+    
     <div class="container">
+        <!-- Sample movie cards -->
+        <div class="card">
+            <div class="card-image">
+                <img src="https://via.placeholder.com/200" alt="Movie Poster">
+            </div>
+            <div class="card-content">
+                <span class="card-title">Movie Title</span>
+                <p>A brief description of the movie.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <img src="https://via.placeholder.com/200" alt="Movie Poster">
+            </div>
+            <div class="card-content">
+                <span class="card-title">Another Movie</span>
+                <p>This movie is about...</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <img src="https://via.placeholder.com/200" alt="Movie Poster">
+            </div>
+            <div class="card-content">
+                <span class="card-title">Third Movie</span>
+                <p>A thrilling action-packed movie.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <img src="https://via.placeholder.com/200" alt="Movie Poster">
+            </div>
+            <div class="card-content">
+                <span class="card-title">Fourth Movie</span>
+                <p>A gripping story of mystery.</p>
+            </div>
+        </div>
     </div>
+
     <footer class="page-footer">
         <div class="footer-copyright">
             <div class="container">
-                © 2014 Copyright Text
+                © 2024 Copyright Text
                 <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
             </div>
         </div>
     </footer>
-
-
 
     <script src="main.js"></script>
 </body>

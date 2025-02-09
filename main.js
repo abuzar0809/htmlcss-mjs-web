@@ -21,7 +21,6 @@ fetch('https://6560acc483aba11d99d151a5.mockapi.io/api/movies')
           </div>
         </div>
       </div>`
-       
         
     })
 })
